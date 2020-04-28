@@ -41,8 +41,8 @@
     border: 1px solid black;
     display: flex;
 }
-.bottom {
-    grid-area: bottom;
+.footer {
+    grid-area: footer;
     background: lightblue;
     border: 1px solid black;
     display: flex;
@@ -118,7 +118,7 @@ input:required {
     color: tomato;
     font-size: large;
 }
-.bottom p {
+.footer p {
     margin: auto;
     width: 600px;
 }
