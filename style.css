@@ -1,0 +1,139 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.top {
+    grid-area: top;
+    background: red;
+    border: 1px solid black;
+    display: flex;
+}
+.lefttop {
+    grid-area: lefttop;
+    background: yellow;
+    border: 1px solid black;
+    display: flex;
+}
+.leftbottom {
+    grid-area: leftbottom;
+    background: greenyellow;
+    border: 1px solid black;
+    display: flex;
+}
+.middle {
+    grid-area: middle;
+    background: hotpink;
+    border: 1px solid black;
+    display: flex;
+}
+.righttop {
+    grid-area: righttop;
+    background: indigo;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.rightbottom {
+    grid-area: rightbottom;
+    background: khaki;
+    border: 1px solid black;
+    display: flex;
+}
+.bottom {
+    grid-area: bottom;
+    background: lightblue;
+    border: 1px solid black;
+    display: flex;
+}
+
+.container {
+    display: grid;
+    height: 100vh;
+    flex: 100%;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(4,1fr);
+    grid-template-areas: 
+    "top top top"
+    "lefttop middle righttop"
+    "leftbottom middle rightbottom"
+    "bottom bottom bottom"
+    ;
+}
+
+p {
+    margin: auto;
+}
+
+input:checked {
+    height: 50px;
+    width: 50px;
+}
+
+.lefttop input:focus {
+    background: yellowgreen;
+}
+
+input:required {
+    background: gray;
+    font-size: 30px;
+    text-align: center;
+}
+
+.middle div {
+    margin: auto;
+}
+
+.middle div p:nth-child(2n+1) {
+    background: darkcyan;
+    border: 1px solid black;
+}
+.middle div p:nth-child(2n+0) {
+    background: cyan;
+    border: 1px solid black;
+}
+
+.top p {
+    width: 500px;
+}
+
+.top p::selection {
+    background: cornflowerblue;
+    color: yellow;
+}
+
+.top p::first-letter {
+    font-size: 30px;
+}
+
+.top p:hover {
+    font-size: 20px;
+    color: white;
+}
+.rightbottom a {
+    margin: auto;
+}
+.rightbottom a:active {
+    color: tomato;
+    font-size: large;
+}
+.bottom p {
+    margin: auto;
+    width: 600px;
+}
+.text::before{
+    content: "„";
+}
+.text::after{
+    content: "”";
+}
+.text:last-of-type{
+    border-color: teal;
+    font-size: 1.2rem;
+}
+
+.righttop p:hover {
+    color: wheat;font-size: 50px;
+    transition: all 400ms linear;
+}
